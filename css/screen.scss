@@ -38,3 +38,18 @@ body {
   font-family: 'Vazir', sans-serif;
   font-size: 20px;
 }
+/* === پس‌زمینه‌ی مینیمال با حس قهوه‌ای === */
+body {
+  background-color: #f8f5f0;
+  background-image: 
+    linear-gradient(120deg, rgba(245, 233, 215, 0.95), rgba(235, 215, 195, 0.9)),
+    url('https://raw.githubusercontent.com/morteza/filehost/main/textures/light-coffee-texture.png');
+  background-repeat: repeat;
+  background-size: auto;
+  font-family: 'Vazir', sans-serif;
+}
+
+/* اطمینان از شفاف بودن بخش‌های اصلی */
+header, .hero, .main, .content, .container {
+  background-color: transparent !important;
+}
