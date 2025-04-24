@@ -68,3 +68,12 @@ header, .hero, .main, .content, .container {
   background-size: auto;
   font-family: 'Vazir', sans-serif;
 }
+/* تنظیم رنگ نوشته‌ها در کل سایت */
+body, h1, h2, h3, h4, h5, h6, p, a, li, span {
+  color: #4b2e2e; /* یه قهوه‌ای تیره که تو بک‌گراند روشن عالی دیده میشه */
+}
+
+/* مخصوص بخش hero */
+.hero * {
+  color: #4b2e2e !important;
+}
