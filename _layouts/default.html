@@ -42,20 +42,12 @@
 			</div>
 
 			<section class="hero">
-				<div class="text-container">
-					{% if page.hero %}
-  <h1 style="font-size: 40px; margin-bottom: 10px;">{{ page.hero }}</h1>
-{% endif %}
-
-{% if page.tagline %}
-  <p style="font-size: 20px; margin-bottom: 10px;">{{ page.tagline }}</p>
-{% endif %}
-
-{% if page.subtitle %}
-  <p style="font-size: 16px; line-height: 1.8;">{{ page.subtitle }}</p>
-{% endif %}
-				</div>
-			</section>
+  <div class="text-container" style="text-align: center;">
+    <h2 style="font-size: 48px; margin-bottom: 10px;">{{ page.hero }}</h2>
+    <p style="font-size: 24px; margin-bottom: 8px;">{{ page.tagline }}</p>
+    <p style="font-size: 18px; line-height: 1.6;">{{ page.subtitle }}</p>
+  </div>
+</section>
 		</header>
 		{{ content }}
 		<footer>
