@@ -77,3 +77,12 @@ body, h1, h2, h3, h4, h5, h6, p, a, li, span {
 .hero * {
   color: #4b2e2e !important;
 }
+/* تغییر رنگ متن در کل سایت */
+body, h1, h2, h3, h4, h5, h6, p, a, li, span {
+  color: #3e2c2c !important; /* قهوه‌ای تیره، خوانا و شیک */
+}
+
+/* مخصوص بخش hero */
+.hero, .hero * {
+  color: #3e2c2c !important;
+}
