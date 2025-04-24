@@ -44,14 +44,16 @@
 			<section class="hero">
 				<div class="text-container">
 					{% if page.hero %}
-						<h2>{{ page.hero }}</h2>
-					{% elsif page.name %}
-						<h2>{{ page.name }}</h2>
-					{% endif %}
+  <h1 style="font-size: 40px; margin-bottom: 10px;">{{ page.hero }}</h1>
+{% endif %}
 
-					{% if page.subtitle %}
-						<p>{{ page.subtitle }}</p>
-					{% endif %}
+{% if page.tagline %}
+  <p style="font-size: 20px; margin-bottom: 10px;">{{ page.tagline }}</p>
+{% endif %}
+
+{% if page.subtitle %}
+  <p style="font-size: 16px; line-height: 1.8;">{{ page.subtitle }}</p>
+{% endif %}
 				</div>
 			</section>
 		</header>
