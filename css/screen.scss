@@ -48,7 +48,12 @@ body {
   background-size: auto;
   font-family: 'Vazir', sans-serif;
 }
-
+/* خنثی کردن رنگ بنفش بخش‌های بالای سایت */
+.hero, header, .site-header, .page-header, .banner, .top-section {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
 /* اطمینان از شفاف بودن بخش‌های اصلی */
 header, .hero, .main, .content, .container {
   background-color: transparent !important;
