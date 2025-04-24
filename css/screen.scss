@@ -3,19 +3,22 @@
 /* تنظیم فونت برای تمام سایت */
 body, h1, h2, h3, h4, h5, h6, p, a, li, span {
   font-family: 'Vazir', sans-serif;
-  color: #3e2c2c; /* قهوه‌ای تیره برای نوشته‌ها */
+  color: #3e2c2c; /* رنگ متن اصلی قهوه‌ای تیره */
   margin: 0;
   padding: 0;
+  line-height: 1.6; /* تنظیم فاصله خطوط برای خوانایی بهتر */
 }
 
-/* بک‌گراند کلی سایت */
+/* بک‌گراند اصلی سایت */
 body {
-  background-color: #f8f5f0;
+  background-color: #f8f5f0; /* رنگ پس‌زمینه روشن */
   background-image: 
     linear-gradient(120deg, rgba(245, 233, 215, 0.9), rgba(235, 215, 195, 0.95)),
     url('https://raw.githubusercontent.com/morteza/filehost/main/textures/light-coffee-texture.png');
   background-repeat: repeat;
   background-size: auto;
+  position: relative;
+  z-index: 1; /* اطمینان از نمایش پس‌زمینه */
 }
 
 /* هدر و بخش‌های بالای سایت */
@@ -35,7 +38,7 @@ header, .hero, .main, .content, .container {
   color: #3e2c2c !important;
 }
 
-/* مخصوص بخش‌های دیگر سایت */
+/* مخصوص لینک‌ها */
 a {
   color: #3e2c2c; /* لینک‌ها به رنگ قهوه‌ای تیره */
   text-decoration: none;
@@ -48,4 +51,20 @@ a:hover {
 /* تنظیم رنگ نوشته‌ها برای بخش‌های مختلف */
 h1, h2, h3, h4, h5, h6, p, li, span {
   color: #3e2c2c !important;
+}
+
+/* اضافه کردن تنظیمات لایه‌بندی برای بخش‌های مختلف */
+.hero {
+  position: relative;
+  z-index: 2;
+  padding: 40px 20px; /* تنظیم فاصله از لبه‌ها */
+}
+
+.container, .main {
+  z-index: 3; /* اطمینان از نمایش درست */
+}
+
+/* تنظیم استایل برای بخش‌های مختلف صفحه */
+section {
+  padding: 40px 20px; /* فاصله استاندارد */
 }
