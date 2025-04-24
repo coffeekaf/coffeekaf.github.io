@@ -1,91 +1,51 @@
----
----
-@import "mixins/flexbox";
-@import "mixins/columns";
-@import "variables";
-@import "elements";
-@import "layout";
-@import "products";
-@import "staff";
-@import "contact";
-@import "forms";
-@import "navigation";
-@import "footer";
-@import "cloudcannon";
 @import url("https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css");
 
+/* تنظیم فونت برای تمام سایت */
 body, h1, h2, h3, h4, h5, h6, p, a, li, span {
   font-family: 'Vazir', sans-serif;
+  color: #3e2c2c; /* قهوه‌ای تیره برای نوشته‌ها */
+  margin: 0;
+  padding: 0;
 }
 
-/* این بخش بک‌گراند اصلی سایت */
+/* بک‌گراند کلی سایت */
 body {
   background-color: #f8f5f0;
   background-image: 
     linear-gradient(120deg, rgba(245, 233, 215, 0.9), rgba(235, 215, 195, 0.95)),
-    url('https://www.transparenttextures.com/patterns/pw-maze-white.png');
-  background-repeat: repeat;
-  background-size: auto;
-  font-family: 'Vazir', sans-serif;
-}
-
-.en-title {
-  font-family: sans-serif;
-  font-size: 28px;
-}
-
-.fa-title {
-  font-family: 'Vazir', sans-serif;
-  font-size: 20px;
-}
-/* === پس‌زمینه‌ی مینیمال با حس قهوه‌ای === */
-body {
-  background-color: #f8f5f0;
-  background-image: 
-    linear-gradient(120deg, rgba(245, 233, 215, 0.95), rgba(235, 215, 195, 0.9)),
     url('https://raw.githubusercontent.com/morteza/filehost/main/textures/light-coffee-texture.png');
   background-repeat: repeat;
   background-size: auto;
-  font-family: 'Vazir', sans-serif;
 }
-/* خنثی کردن رنگ بنفش بخش‌های بالای سایت */
+
+/* هدر و بخش‌های بالای سایت */
 .hero, header, .site-header, .page-header, .banner, .top-section {
   background: transparent !important;
   background-color: transparent !important;
   background-image: none !important;
 }
-/* اطمینان از شفاف بودن بخش‌های اصلی */
+
+/* اطمینان از شفاف بودن تمام بخش‌ها */
 header, .hero, .main, .content, .container {
   background-color: transparent !important;
 }
-/* حذف رنگ بنفش و اضافه کردن بافت قهوه‌ای به بخش بالا */
-.hero {
-  background-color: #f8f5f0 !important;
-  background-image: 
-    linear-gradient(120deg, rgba(245, 233, 215, 0.95), rgba(235, 215, 195, 0.9)),
-    url('https://raw.githubusercontent.com/morteza/filehost/main/textures/light-coffee-texture.png') !important;
-  background-repeat: repeat;
-  background-size: auto;
-  font-family: 'Vazir', sans-serif;
-}
-/* تنظیم رنگ نوشته‌ها در کل سایت */
-body, h1, h2, h3, h4, h5, h6, p, a, li, span {
-  color: #4b2e2e; /* یه قهوه‌ای تیره که تو بک‌گراند روشن عالی دیده میشه */
-}
 
-/* مخصوص بخش hero */
+/* تنظیم رنگ نوشته‌ها در بخش hero */
 .hero * {
-  color: #4b2e2e !important;
-}
-/* تغییر رنگ متن در کل سایت */
-body, h1, h2, h3, h4, h5, h6, p, a, li, span {
-  color: #3e2c2c !important; /* قهوه‌ای تیره، خوانا و شیک */
-}
-
-/* مخصوص بخش hero */
-.hero, .hero * {
   color: #3e2c2c !important;
 }
-.hero, .hero * {
-  color: #3e2c2c !important; /* قهوه‌ای تیره و خوانا */
+
+/* مخصوص بخش‌های دیگر سایت */
+a {
+  color: #3e2c2c; /* لینک‌ها به رنگ قهوه‌ای تیره */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4b2e2e; /* تغییر رنگ لینک‌ها در هاور */
+}
+
+/* تنظیم رنگ نوشته‌ها برای بخش‌های مختلف */
+h1, h2, h3, h4, h5, h6, p, li, span {
+  color: #3e2c2c !important;
 }
